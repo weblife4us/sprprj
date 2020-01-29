@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api")
-public class IndexController {
+@RequestMapping("/login")
+public class SpareController {
 
-    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    @RequestMapping(value = "/user", method = RequestMethod.GET)
     public ResponseEntity getHelloWorldMessage() {
-        return ResponseEntity.ok(new ApiResponse(true, "Test passed successfully"));
+        return ResponseEntity.ok(new ApiResponse(true, "Test1 passed successfully"));
     }
 }
